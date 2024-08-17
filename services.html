@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Services</title>
+</head>
+<body>
+    <style>
+        .service h2 {
+    display: flex;
+    justify-content: center;
+    color: #b74b4b;
+    font-size: 3.2em;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    font-family: 'Baloo Tamma', cursive;
+    animation: bounce 2s infinite;
+    transform: translateY(0);
+}
+
+.service h3 {
+    text-align: center;
+    color: white;
+    margin: 20px;
+    font-size: 2.5rem;
+}
+
+.c {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    background-color: black;
+    margin: 10px;
+    width: 40%;
+    height: auto;
+    box-shadow: 0 5px 10px #b74b4b;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: 0.7s ease;
+    text-align: center;
+}
+
+.icon {
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.info p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #b74b4b;
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 995px) {
+    .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+    </style>
+    <header>
+        <a href="index.html" class="logo">AMINE <span style="color: white;">DEV.</span></a>
+        <nav>
+            <a href="index.html" class="active"> Home</a>
+            <a href="services.html" >Services</a>
+            <a href="skills.html" >Skills</a>
+            <a href="education.html" >Education</a>
+        </nav>
+    </header>
+    <section class="service" id="services" style="margin-top: 4%; display: flexbox;">
+        <h2 >Services</h2>
+        <h3>O X &#x25B2;</h3>
+        <div class="c">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="info">
+                    <h4><strong>APP Developer</strong></h4>
+                    <div class="info-container" style="margin-left: -7%;">
+                        <img src="https://logos-download.com/wp-content/uploads/2016/10/Java_logo.png" alt="JAVA" width="50px" height="80px">
+                        <img src="https://logonoid.com/images/android-studio-logo.png" alt="ANDROID STUDIO" width="50px" height="50px" style="margin-top: 15%;">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="info">
+                    <h5><strong>WEB Developer</strong></h5>
+                    <div class="info-container" style="margin-top: 5%">
+                        <img src="https://logospng.org/download/html-5/logo-html-5-1024.png" alt="HTML" width="60px" height="60px" style="margin-top: -2px;">
+                        <img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" alt="CSS" width="70px" height="70px" style="margin-top: -15px;">
+                        <img src="https://skillforge.com/wp-content/uploads/2020/10/javascript.png" alt="JAVASCRIPT" width="50px" height="50px">
+                        <img src="https://th.bing.com/th/id/R.5dad01124c25d19c78aa763d94c6c3ee?rik=O6yFxpwCtIymFA&pid=ImgRaw&r=0" alt="GIT" width="50px" height="50px">
+                        <img src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" alt="GITHUB" width="50px" height="50px">
+                        <img src="https://mobilemancerblog.blob.core.windows.net/blog/2020/08/vs-code-logo-transp.png" alt="VSCODE" width="50px" height="50px">
+                        <img src="https://shopify.github.io/react-native-skia/img/logo.png" alt="reactNative" width="50px" height="50px">
+                        <img src="https://freepngdesign.com/content/uploads/images/p-1698-1-angular-logo-png-transparent-logo-214688437269.png" alt="Angular" width="60px" height="50px">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
