@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>PROJECTS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            margin-top: 0px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 9%;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 3rem;
+            color: #b74b4b;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        nav a {
+            font-size: 1.8rem;
+            color: white;
+            margin-left: 4rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        /* Toggle Menu Icon */
+        .menu-icon {
+            font-size: 2.5rem;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Mobile Nav */
+        @media (max-width: 995px) {
+            nav {
+                position: absolute;
+                display: none;
+                top: 0;
+                right: 0;
+                width: 40%;
+                border-left: 3px solid #b74b4b;
+                border-bottom: 3px solid #b74b4b;
+                border-bottom-left-radius: 2rem;
+                padding: 1rem;
+                background-color: #161616;
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav a {
+                display: block;
+                font-size: 2rem;
+                margin: 3rem 0;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+
+        /* Section Styling */
+        section {
+            padding-top: 8rem;
+            margin-top: 5%;
+            text-align: center;
+            width: 100%;
+        }
+
+        section h2 {
+            font-size: 3rem;
+            color: #b74b4b;
+            margin-bottom: 2rem;
+        }
+
+        section h4 {
+            font-size: 1.5rem;
+            margin-top: -16px;
+        }
+
+        /* Project Container Styling */
+        .projects {
+            padding: 2rem;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            width: 100%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .projects > div {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            margin: 2rem 0; /* Added margin for spacing */
+        }
+        .projects h3 , .projects h4{
+            text-align: center;
+        }
+        .projects h4{
+            font-size: 1.5rem;
+            margin-top: 0px;
+        }
+        .projects p {
+            width: 60%;
+            text-align: left;
+            margin-left: 15%;
+            font-size: 1.6em;
+            color: white;
+        }
+        .projects h3 {
+            color: #b74b4b;
+            text-align: center;
+            font-size: 27px;
+        }
+        .projects img {
+            border-radius: 10px;
+            max-width: 100%; /* Ensures responsiveness */
+            height: auto; /* Keeps aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">AMINE <span style="color: white;">DEV.</span></a>
+        <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+        </nav>
+    </header>
+    <main>
+        <section class="myprojects">
+            <h2>My Projects</h2>
+            <h4>O X &#x25B2;</h4>
+
+            <div class="projects">
+                <div class="calculator">
+                    <img src="https://github.com/aminelebrini/Front-End-Projects/blob/main/calculator/Capture%20d%E2%80%99%C3%A9cran_2-11-2024_163926_.jpeg?raw=true" alt="Calculator Project Screenshot" width="300" height="400">
+                    <p>Calculator:<br> recently developed a project called "Calculator," a simple yet effective tool that performs basic arithmetic operations like addition, subtraction, multiplication, and division. I built this project to strengthen my understanding of core programming concepts and user interface design. By creating this calculator, I got to work with logic and event handling, setting up a user-friendly interface where users can easily input numbers and receive accurate results instantly.</p>
+                </div>
+                <h4>O X &#x25B2;</h4>
+                <div class="weatherWebsite">
+                   
+                    <img src="https://github.com/aminelebrini/Front-End-Projects/blob/main/weatherWebsite/Capture%20d%E2%80%99%C3%A9cran_2-11-2024_131858_127.0.0.1.jpeg?raw=true" alt="Weather Website Screenshot" width="450" height="250">
+                    <p>Weather Website:<br>Weather Website is a simple website that aims to provide users with daily weather information. The website displays only the current weather condition for the day based on the location selected by the user.</p>
+                </div>
+                <h4>O X &#x25B2;</h4>
+                <div class="intra1337">
+                    
+                    <img src="https://github.com/aminelebrini/Front-End-Projects/blob/main/intra%201337/Capture%20d'%C3%A9cran%202024-11-02%20130803.png?raw=true" alt="Intra 1337 Project Screenshot" width="450" height="250">
+                    <p>Intra 1337:<br>Intra 1337 is a comprehensive project designed to replicate or enhance the functionality of the in-house platform. The platform serves as a management and tracking tool to support students throughout their journey by providing features that align with 1337’s unique self-paced learning approach.</p>
+                </div>
+                <h4>O X &#x25B2;</h4>
+                <div class="ecomweb">
+                    
+                    <img src="https://github.com/aminelebrini/Front-End-Projects/blob/main/ecom%20web/Capture%20d%E2%80%99%C3%A9cran_2-11-2024_165330_127.0.0.1.jpeg?raw=true" alt="Ecom Store Project Screenshot" width="450" height="250">
+                    <p>Ecom-Store: <br>"TECHNO" is a basic e-commerce website designed to provide a streamlined shopping experience. Built using HTML, CSS, and JavaScript, it enables users to browse a variety of products, view details, and add items to a shopping cart. The project demonstrates fundamental e-commerce functionalities, including product display and interactivity.</p>
+                </div>
+            <h4>O X &#x25B2;</h4>
+            <div class="TECHNOCODINGSCHOOL">
+                <img src="https://github.com/aminelebrini/Front-End-Projects/blob/main/TECHNO%20CODING%20SCHOOL/Capture%20d%E2%80%99%C3%A9cran_2-11-2024_133037_127.0.0.1.jpeg?raw=true" width="450px" height="250px">
+                <p>TECHNO CODING SCHOOL<br>"TECHNO CODING SCHOOL" Registration System is a project dedicated to registering candidates wishing to join the "TECHNO CODING SCHOOL" programming school, and is currently in its early stages of development.</p>
+            </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
